@@ -1,0 +1,10 @@
+[Unit]
+Description=Clone EFI Partition to secondary drive
+
+[Service]
+Type=oneshot
+ExecStart=/usr/local/bin/efi-clone.sh
+StandardOutput=journal
+
+[Install]
+WantedBy=multi-user.target
