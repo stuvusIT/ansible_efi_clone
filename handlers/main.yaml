@@ -1,6 +1,0 @@
----
-- name: reload systemd
-  systemd:
-    daemon_reload: yes
-    name: efi-clone.service
-    state: reloaded
